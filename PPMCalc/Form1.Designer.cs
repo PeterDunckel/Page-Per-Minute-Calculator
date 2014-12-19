@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.butCalculate = new System.Windows.Forms.Button();
             this.txtPageCount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,17 +50,6 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.SuspendLayout();
             // 
-            // butCalculate
-            // 
-            this.butCalculate.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butCalculate.Location = new System.Drawing.Point(129, 95);
-            this.butCalculate.Name = "butCalculate";
-            this.butCalculate.Size = new System.Drawing.Size(122, 37);
-            this.butCalculate.TabIndex = 0;
-            this.butCalculate.Text = "Calculate";
-            this.butCalculate.UseVisualStyleBackColor = true;
-            this.butCalculate.Click += new System.EventHandler(this.butCalculate_Click);
-            // 
             // txtPageCount
             // 
             this.txtPageCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,6 +58,7 @@
             this.txtPageCount.Name = "txtPageCount";
             this.txtPageCount.Size = new System.Drawing.Size(100, 26);
             this.txtPageCount.TabIndex = 1;
+            this.txtPageCount.TextChanged += new System.EventHandler(this.txtPageCount_TextChanged);
             // 
             // label1
             // 
@@ -99,6 +88,7 @@
             this.txtTimeCount.Name = "txtTimeCount";
             this.txtTimeCount.Size = new System.Drawing.Size(100, 26);
             this.txtTimeCount.TabIndex = 3;
+            this.txtTimeCount.TextChanged += new System.EventHandler(this.txtTimeCount_TextChanged);
             // 
             // label3
             // 
@@ -253,7 +243,6 @@
             this.Controls.Add(this.txtTimeCount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPageCount);
-            this.Controls.Add(this.butCalculate);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -269,7 +258,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button butCalculate;
         private System.Windows.Forms.TextBox txtPageCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

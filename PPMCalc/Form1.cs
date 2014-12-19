@@ -56,7 +56,8 @@ namespace WindowsFormsApplication1
             }
             catch (Exception ex)
             {
-                ReportError(ex);
+                txtPPM.Text = ex.Message;
+                //ReportError(ex);
             }
         }
 
@@ -132,6 +133,16 @@ namespace WindowsFormsApplication1
         {
             MessageBox.Show("An error occurred: " + ex.Message);
            
+        }
+
+        private void txtPageCount_TextChanged(object sender, EventArgs e)
+        {
+            Calculate();
+        }
+
+        private void txtTimeCount_TextChanged(object sender, EventArgs e)
+        {
+            Calculate();
         }
 
        
