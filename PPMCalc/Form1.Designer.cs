@@ -46,9 +46,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ClearBut = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.SuspendLayout();
             // 
             // butCalculate
@@ -211,13 +211,13 @@
             this.shapeContainer1.TabIndex = 16;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
+            // lineShape3
             // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 382;
-            this.lineShape1.X2 = 643;
-            this.lineShape1.Y1 = 32;
-            this.lineShape1.Y2 = 32;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 90;
+            this.lineShape3.X2 = 291;
+            this.lineShape3.Y1 = 231;
+            this.lineShape3.Y2 = 231;
             // 
             // lineShape2
             // 
@@ -227,13 +227,13 @@
             this.lineShape2.Y1 = 143;
             this.lineShape2.Y2 = 143;
             // 
-            // lineShape3
+            // lineShape1
             // 
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 90;
-            this.lineShape3.X2 = 291;
-            this.lineShape3.Y1 = 231;
-            this.lineShape3.Y2 = 231;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 382;
+            this.lineShape1.X2 = 643;
+            this.lineShape1.Y1 = 32;
+            this.lineShape1.Y2 = 32;
             // 
             // Form1
             // 
@@ -256,8 +256,11 @@
             this.Controls.Add(this.butCalculate);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Peter\'s Multifunctional Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
